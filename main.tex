@@ -1,0 +1,59 @@
+
+%% We use the memoir class because it offers a many easy to use features.
+\documentclass[10pt,a4paper,titlepage,openany,oneside]{memoir}
+
+%% `usepackage` commands.
+\input{preamble}
+
+
+\input{setup/layout}
+
+
+\input{setup/theorem}
+
+
+
+
+%% Helpful macros.
+\input{setup/macro}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=3cm,bottom=2cm,left=3cm,right=3cm,marginparwidth=1.75cm]{geometry}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=black]{hyperref}
+
+\title{Adaptive Signal Processing and Machine Intelligence Coursework}
+\author{Jing Ding}
+% Update supervisor and other title stuff in title/title.tex
+
+\begin{document}
+\input{title/title.tex}
+
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\input{Part1/Part1.tex}
+\input{background/background.tex}
+\input{project/project.tex}
+\input{evaluation/evaluation.tex}
+\input{conclusion/conclusion.tex}
+\input{appendix/appendix.tex}
+
+\bibliographystyle{alpha}
+\bibliography{bibs/sample}
+
+\end{document}
+
+
+
